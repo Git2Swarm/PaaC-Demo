@@ -13,7 +13,7 @@ node () {
   parallel 'branch1' : {
     sh "echo docker info"
   }, 'branch2' : {
-    sh "echo branch 2"
+    sh "error-echo branch 2"
   }
 
   stage 'Launch docker container'
